@@ -39,8 +39,11 @@ The club owns the domain name. Once the domain's DNS settings are configured to 
 ## Updating Content (Placeholders)
 There are several placeholders embedded in the HTML file (`index.html`) marked with `<!-- PLACEHOLDER: ... -->`. These need to be updated as real assets and information become available:
 - **Logo**: Replace `assets/img/logo-placeholder.svg` with the actual SVG logo.
-- **Email/Contact Links**: Update `mailto:placeholder@example.com` links.
+- **Email/Contact Links**: Contact email is `wiscopenhardware@gmail.com`; update the `mailto:` link in the footer if this changes.
 - **GitHub Links**: Update `https://github.com/wisconsin-open-hardware` if the organization URL changes.
-- **Leadership Photos**: Update the placeholder circles in the Leadership section with actual `<img>` tags if desired.
+- **Team Photos**: Update the placeholder circles in the Our Team section with actual `<img>` tags if desired.
+- **Social Handles**: Update the Slack invite link, Instagram handle, and LinkedIn page URL (used in both the Join Us section and the footer).
+- **Join Us Form**: The "Open Sign-Up Form" button links out to the club's Google Form. Update the URL in the `#join` section of `index.html` if the form changes.
+- **Events**: Add/remove `.event-card` entries inside `#events` as new events are announced.
 - **Faculty Advisor**: Update the text in the footer.
 - **Governance**: Update the governance URL to point to the actual repo or document.

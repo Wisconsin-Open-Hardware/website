@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wisconsin Open Hardware | UW-Madison</title>
-    <meta name="description" content="Wisconsin Open Hardware (WOH): Empowering UW-Madison undergraduates with a collaborative environment to design, verify, and build industry-grade hardware from scratch.">
-    
+    <meta name="description" content="Wisconsin Open Hardware: Empowering UW-Madison undergraduates with a collaborative environment to design, verify, and build industry-grade hardware from scratch.">
+
     <!-- Open Graph for SEO/Social -->
     <meta property="og:title" content="Wisconsin Open Hardware">
     <meta property="og:description" content="Bridging the gap between classroom theory and industry practice through hands-on FPGA and digital hardware design.">
@@ -28,31 +28,33 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="nav-brand">
-                <img src="assets/img/logo.png" alt="WOH Logo">
-                <span>WOH</span>
+                <img src="assets/img/logo.png" alt="Wisconsin Open Hardware Logo">
+                <span>Wisconsin Open Hardware</span>
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#program">Program</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#our-team">Our Team</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li><a href="#join" class="nav-join-btn">Join Us</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
+        <div class="hero-banner">
+            <img src="assets/img/hero-bg.jpg" alt="Wisconsin Open Hardware">
+            <a href="#join" class="hero-banner-join" aria-label="Join the club"></a>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <span class="hero-eyebrow">UW-Madison ECE</span>
-                <h1>Wisconsin Open Hardware</h1>
                 <p>Bridging the gap between classroom theory and industry practice by empowering undergraduates with a collaborative, peer-led environment to design, verify, and build industry-grade hardware from scratch.</p>
                 <div class="hero-actions">
-                    <!-- PLACEHOLDER: replace with real club email or form link -->
-                    <a href="mailto:placeholder@example.com" class="btn btn-primary">Join the Club</a>
+                    <a href="#join" class="btn btn-primary">Join the Club</a>
                     <!-- PLACEHOLDER: replace with real GitHub org URL if different -->
                     <a href="https://github.com/wisconsin-open-hardware" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View GitHub</a>
                 </div>
@@ -106,7 +108,7 @@
         <div class="container grid grid-2">
             <div>
                 <h2>Flagship Project</h2>
-                <h3 style="color: var(--accent-secondary); font-family: var(--font-mono); margin-bottom: 1rem;">// The WOH Arcade Machine</h3>
+                <h3 style="color: var(--accent-secondary); font-family: var(--font-mono); margin-bottom: 1rem;">// The Wisconsin Open Hardware Arcade Machine</h3>
                 <p>A full hardware arcade machine combining multiple individually-built games into one unified system, featuring a shared main menu and custom physical peripherals.</p>
                 <ul style="margin-top: 1.5rem; margin-left: 1.5rem;">
                     <li style="margin-bottom: 0.5rem;"><strong>Development Approach:</strong> Members build individual games independently (state-machine driven: start, active, end), which are then integrated into a single VGA-output FPGA system.</li>
@@ -114,12 +116,37 @@
                     <li><strong>Interdisciplinary:</strong> A fantastic entry point not just for ECE students, but for Mechanical Engineering students building physical cabinet hardware.</li>
                 </ul>
             </div>
-            <div class="card" style="display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3);">
+            <div class="card" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f4f6f9, #dfe4ea);">
                 <!-- Decorative representation of project -->
                 <div style="text-align: center;">
                     <div style="font-size: 4rem; color: var(--accent-primary); margin-bottom: 1rem;">🕹️</div>
                     <div class="mono" style="color: var(--text-bright);">System Integration in Progress</div>
                     <div class="mono" style="color: var(--text-main); font-size: 0.8rem; margin-top: 0.5rem;">Target: FPGA VGA Output</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <div class="container">
+            <h2>Events</h2>
+            <p style="max-width: 800px; margin-bottom: 2rem;">Socials, workshops, and demos happening around Wisconsin Open Hardware — check back regularly for what's next.</p>
+
+            <div class="events-list">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-month">SEP</span>
+                        <span class="event-day">9</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>ECE Student Welcome Ice Cream Social</h3>
+                        <div class="event-meta mono">September 9 @ 2:30 PM – 4:00 PM · Union South</div>
+                        <p>Kick off the semester with your ECE community! Start the semester strong by connecting with other ECE students, faculty, and staff at this fun welcome event. Enjoy FREE Babcock ice cream🍦, grab an awesome ECE t-shirt while supplies last, and meet the people who'll be part of your journey this year.</p>
+                        <p>Also, for those undergraduates who have fully progressed into your major of computer engineering or electrical engineering, stop by the progression table for a special gift. This is the first year that we are celebrating progression, so be sure to grab your gift even if you progressed one, two, or three years ago!</p>
+                        <p>Don't miss out—check your wisc.edu email and RSVP by September 3.</p>
+                        <p>We'll see you at Union South on September 9!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,10 +197,10 @@
         </div>
     </section>
 
-    <!-- Leadership -->
-    <section id="leadership">
+    <!-- Our Team -->
+    <section id="our-team">
         <div class="container">
-            <h2>Leadership</h2>
+            <h2>Our Team</h2>
             <div class="grid grid-3">
                 <div class="card">
                     <!-- PLACEHOLDER: replace photo and name -->
@@ -195,63 +222,6 @@
                     <h3>VP of Implementation</h3>
                     <!-- <div class="mono" style="color: var(--accent-secondary); margin-bottom: 1rem; font-size: 0.9rem;">[Name Placeholder]</div> -->
                     <p style="font-size: 0.9rem;">Manages lab logistics and FPGA board allocation. Oversees toolchain workflows (Quartus, ModelSim, Verilator, GTKWave), runs technical workshops, hardware bring-up labs, and coordinates recruitment.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Roadmap / Timeline -->
-    <section id="timeline" style="background-color: var(--bg-surface-light);">
-        <div class="container">
-            <h2>2026-2027 Roadmap</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <span class="timeline-date">Nov 14, 2026</span>
-                    <div class="timeline-content">
-                        <h3>Official Kickoff</h3>
-                        <p>Info session and introduction to the club's mission, structure, and flagship project.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <span class="timeline-date">Late Nov – Mid Dec 2026</span>
-                    <div class="timeline-content">
-                        <h3>Foundations & Toolchain</h3>
-                        <p>Training 1 (Combinational) and Training 2 (Sequential/Verification) executed.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <span class="timeline-date">Late Jan – Feb 2027</span>
-                    <div class="timeline-content">
-                        <h3>Sub-team Development</h3>
-                        <p>Isolated RTL blocks built by sub-teams for individual arcade games.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <span class="timeline-date">March 2027</span>
-                    <div class="timeline-content">
-                        <h3>Hardware Bring-up</h3>
-                        <p>Initial physical testing on DE10-Lite boards.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <span class="timeline-date">April 2027</span>
-                    <div class="timeline-content">
-                        <h3>System Integration</h3>
-                        <p>Combining isolated modules into the unified arcade architecture.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <span class="timeline-date">Late April/May 2027</span>
-                    <div class="timeline-content">
-                        <h3>Public Demo Day</h3>
-                        <p>Showcase of the completed hardware project to peers and faculty.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -302,6 +272,38 @@
         </div>
     </section>
 
+    <!-- Join Us -->
+    <section id="join" style="background-color: var(--bg-surface-light);">
+        <div class="container">
+            <h2>Join Us</h2>
+            <p style="max-width: 800px; margin-bottom: 2rem;">Ready to design and build real hardware with us? Sign up through our form or connect with us on our channels below — no experience required.</p>
+
+            <div class="join-layout">
+                <div class="join-cta card">
+                    <h3>Interest Form</h3>
+                    <p style="margin-bottom: 1.5rem;">Fill out our sign-up form to join the club or get on our mailing list.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkss4s9VzxdiUYJ1gUrEd-M87TZKxdqC_bR7nMto0ewKvsIA/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Sign-Up Form ↗</a>
+                </div>
+
+                <div class="join-social">
+                    <h3>Or connect with us</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Follow along, ask questions, and meet other members on our channels.</p>
+                    <div class="social-links">
+                        <a href="https://join.slack.com/t/wiscopenhardware/shared_invite/zt-47ldnbaxi-saMWil1zQZTGTSz4FUm4pw" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span class="social-icon">💬</span> Slack
+                        </a>
+                        <a href="https://www.instagram.com/wisconsinopenhardware?stkn=djh4OWFvOWNoODMx" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span class="social-icon">📷</span> Instagram
+                        </a>
+                        <a href="https://linkedin.com/company/wisc-open-hardware" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span class="social-icon">in</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Governance & Footer -->
     <footer>
         <div class="container">
@@ -317,8 +319,10 @@
                     <ul>
                         <!-- PLACEHOLDER URLs -->
                         <li><a href="https://github.com/wisconsin-open-hardware" target="_blank" rel="noopener noreferrer">GitHub Organization</a></li>
-                        <li><a href="mailto:placeholder@example.com">Contact Email</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn (TBD)</a></li>
+                        <li><a href="mailto:wiscopenhardware@gmail.com">Contact Email</a></li>
+                        <li><a href="https://join.slack.com/t/wiscopenhardware/shared_invite/zt-47ldnbaxi-saMWil1zQZTGTSz4FUm4pw" target="_blank" rel="noopener noreferrer">Slack</a></li>
+                        <li><a href="https://www.instagram.com/wisconsinopenhardware?stkn=djh4OWFvOWNoODMx" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://linkedin.com/company/wisc-open-hardware" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
