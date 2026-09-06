@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisconsin Open Hardware | UW-Madison</title>
+    <meta name="description" content="Wisconsin Open Hardware (WOH): Empowering UW-Madison undergraduates with a collaborative environment to design, verify, and build industry-grade hardware from scratch.">
+    
+    <!-- Open Graph for SEO/Social -->
+    <meta property="og:title" content="Wisconsin Open Hardware">
+    <meta property="og:description" content="Bridging the gap between classroom theory and industry practice through hands-on FPGA and digital hardware design.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon (Using real logo) -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+    <!-- Google Fonts: Inter (Body) & Fira Code (Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-brand">
+                <img src="assets/img/logo.png" alt="WOH Logo">
+                <span>WOH</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-eyebrow">UW-Madison ECE</span>
+                <h1>Wisconsin Open Hardware</h1>
+                <p>Bridging the gap between classroom theory and industry practice by empowering undergraduates with a collaborative, peer-led environment to design, verify, and build industry-grade hardware from scratch.</p>
+                <div class="hero-actions">
+                    <!-- PLACEHOLDER: replace with real club email or form link -->
+                    <a href="mailto:placeholder@example.com" class="btn btn-primary">Join the Club</a>
+                    <!-- PLACEHOLDER: replace with real GitHub org URL if different -->
+                    <a href="https://github.com/wisconsin-open-hardware" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section id="about">
+        <div class="container grid grid-2">
+            <div>
+                <h2>Mission</h2>
+                <p>Bridging the gap between classroom theory and industry practice by empowering undergraduates with a collaborative, peer-led environment to design, verify, and build industry-grade hardware from scratch.</p>
+            </div>
+            <div>
+                <h2>Vision</h2>
+                <p>To establish UW-Madison as a premier hub for open hardware innovation, making complex hardware design accessible to all motivated students and cultivating world-class engineers who drive real-world progress.</p>
+                <p style="margin-top: 1rem;">This vision is explicitly informed by the <strong>Wisconsin Idea</strong>—the philosophy that university research and education should benefit the public and the state beyond the classroom. We position UW-Madison as a feeder school for digital hardware and silicon expertise, ensuring top engineering talent continues to thrive and innovate right here in Wisconsin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do / Program Structure -->
+    <section id="program" style="background-color: var(--bg-surface-light);">
+        <div class="container">
+            <h2>Program Structure</h2>
+            <p style="max-width: 800px; margin-bottom: 2rem;">Our onboarding and development structure is designed to take students from fundamental logic gates to complex system integration, regardless of prior experience.</p>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <span class="track-label">Pre-352 Foundation</span>
+                    <h3>Foundational Group</h3>
+                    <p>For new members without prior coursework. We cover binary representation, boolean algebra, multiplexers, and basic synchronous registers before merging into project teams.</p>
+                </div>
+                <div class="card">
+                    <span class="track-label">Track 1</span>
+                    <h3>FPGA & Embedded</h3>
+                    <p>The default entry point. Covers <strong>Training 1</strong> (combinational logic, binary arithmetic, RTL basics) and <strong>Training 2</strong> (sequential logic, FSMs, clock management, and simulation-first verification with self-checking testbenches).</p>
+                </div>
+                <div class="card">
+                    <span class="track-label">Track 2</span>
+                    <h3>Tapeout</h3>
+                    <p>An advanced track for members who've completed Track 1 or have equivalent proficiency (e.g., ECE 552). Focused on ASIC and tapeout-oriented design methodologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flagship Project -->
+    <section id="projects">
+        <div class="container grid grid-2">
+            <div>
+                <h2>Flagship Project</h2>
+                <h3 style="color: var(--accent-secondary); font-family: var(--font-mono); margin-bottom: 1rem;">// The WOH Arcade Machine</h3>
+                <p>A full hardware arcade machine combining multiple individually-built games into one unified system, featuring a shared main menu and custom physical peripherals.</p>
+                <ul style="margin-top: 1.5rem; margin-left: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Development Approach:</strong> Members build individual games independently (state-machine driven: start, active, end), which are then integrated into a single VGA-output FPGA system.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Sub-Teams:</strong> Dedicated teams for each game, plus a peripherals/hardware team focusing on joysticks and controller enclosures.</li>
+                    <li><strong>Interdisciplinary:</strong> A fantastic entry point not just for ECE students, but for Mechanical Engineering students building physical cabinet hardware.</li>
+                </ul>
+            </div>
+            <div class="card" style="display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3);">
+                <!-- Decorative representation of project -->
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; color: var(--accent-primary); margin-bottom: 1rem;">🕹️</div>
+                    <div class="mono" style="color: var(--text-bright);">System Integration in Progress</div>
+                    <div class="mono" style="color: var(--text-main); font-size: 0.8rem; margin-top: 0.5rem;">Target: FPGA VGA Output</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Stack & Toolchain -->
+    <section id="stack" style="background-color: var(--bg-surface-light);">
+        <div class="container">
+            <h2>Development Stack</h2>
+            <p>We prioritize open-source tooling alongside industry-standard software to maximize accessibility and practical experience.</p>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Tool / Technology</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hardware Description</td>
+                            <td>SystemVerilog / Verilog</td>
+                        </tr>
+                        <tr>
+                            <td>FPGA Synthesis</td>
+                            <td>Intel Quartus Prime Lite</td>
+                        </tr>
+                        <tr>
+                            <td>Simulation</td>
+                            <td>ModelSim / Questa, Verilator, Icarus Verilog</td>
+                        </tr>
+                        <tr>
+                            <td>Waveform Debug</td>
+                            <td>GTKWave</td>
+                        </tr>
+                        <tr>
+                            <td>Target Hardware</td>
+                            <td>Terasic DE10-Lite (Intel MAX 10 FPGA)</td>
+                        </tr>
+                        <tr>
+                            <td>Version Control</td>
+                            <td>Git & GitHub</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership">
+        <div class="container">
+            <h2>Leadership</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <!-- PLACEHOLDER: replace photo and name -->
+                    <div style="width: 80px; height: 80px; background: var(--bg-color); border-radius: 50%; margin-bottom: 1rem; border: 2px solid var(--accent-primary);"></div>
+                    <h3>President</h3>
+                    <!-- <div class="mono" style="color: var(--accent-secondary); margin-bottom: 1rem; font-size: 0.9rem;">[Name Placeholder]</div> -->
+                    <p style="font-size: 0.9rem;">Primary liaison to the university, CfLI, ESC, and departmental administration. Directs organizational roadmap, manages faculty advisor relationships, and assists with top-level system integration.</p>
+                </div>
+                <div class="card">
+                    <!-- PLACEHOLDER: replace photo and name -->
+                    <div style="width: 80px; height: 80px; background: var(--bg-color); border-radius: 50%; margin-bottom: 1rem; border: 2px solid var(--accent-primary);"></div>
+                    <h3>VP of Architecture</h3>
+                    <!-- <div class="mono" style="color: var(--accent-secondary); margin-bottom: 1rem; font-size: 0.9rem;">[Name Placeholder]</div> -->
+                    <p style="font-size: 0.9rem;">Defines architectural specs for core hardware systems, register maps, and bus interconnects. Manages Git repo infrastructure, PR reviews, coding style, verification benches, and co-designs onboarding curriculum.</p>
+                </div>
+                <div class="card">
+                    <!-- PLACEHOLDER: replace photo and name -->
+                    <div style="width: 80px; height: 80px; background: var(--bg-color); border-radius: 50%; margin-bottom: 1rem; border: 2px solid var(--accent-primary);"></div>
+                    <h3>VP of Implementation</h3>
+                    <!-- <div class="mono" style="color: var(--accent-secondary); margin-bottom: 1rem; font-size: 0.9rem;">[Name Placeholder]</div> -->
+                    <p style="font-size: 0.9rem;">Manages lab logistics and FPGA board allocation. Oversees toolchain workflows (Quartus, ModelSim, Verilator, GTKWave), runs technical workshops, hardware bring-up labs, and coordinates recruitment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap / Timeline -->
+    <section id="timeline" style="background-color: var(--bg-surface-light);">
+        <div class="container">
+            <h2>2026-2027 Roadmap</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Nov 14, 2026</span>
+                    <div class="timeline-content">
+                        <h3>Official Kickoff</h3>
+                        <p>Info session and introduction to the club's mission, structure, and flagship project.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Late Nov – Mid Dec 2026</span>
+                    <div class="timeline-content">
+                        <h3>Foundations & Toolchain</h3>
+                        <p>Training 1 (Combinational) and Training 2 (Sequential/Verification) executed.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Late Jan – Feb 2027</span>
+                    <div class="timeline-content">
+                        <h3>Sub-team Development</h3>
+                        <p>Isolated RTL blocks built by sub-teams for individual arcade games.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">March 2027</span>
+                    <div class="timeline-content">
+                        <h3>Hardware Bring-up</h3>
+                        <p>Initial physical testing on DE10-Lite boards.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">April 2027</span>
+                    <div class="timeline-content">
+                        <h3>System Integration</h3>
+                        <p>Combining isolated modules into the unified arcade architecture.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Late April/May 2027</span>
+                    <div class="timeline-content">
+                        <h3>Public Demo Day</h3>
+                        <p>Showcase of the completed hardware project to peers and faculty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need prior Verilog/FPGA experience?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No! Our tiered onboarding track covers all the fundamentals from scratch, starting with basic logic before moving into advanced topics.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What hardware will I use?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We primarily use the Terasic DE10-Lite development board featuring an Intel MAX 10 FPGA, utilizing VGA output, switches, buttons, and 7-segment displays for IO.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the time commitment?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Members should expect to commit roughly 3–5 hours per week on average between meetings, trainings, and independent project work.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Who can join?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The club is open to all majors! While highly relevant for Computer Engineering and Electrical Engineering students, Mechanical Engineering students are also highly encouraged to join, especially for building physical cabinet hardware and peripherals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance & Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Wisconsin Open Hardware</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">Department of Electrical and Computer Engineering<br>University of Wisconsin-Madison</p>
+                    <!-- PLACEHOLDER: replace with real advisor name -->
+                    <p style="font-size: 0.9rem; color: var(--accent-secondary);">Faculty Advisor: TBD</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <!-- PLACEHOLDER URLs -->
+                        <li><a href="https://github.com/wisconsin-open-hardware" target="_blank" rel="noopener noreferrer">GitHub Organization</a></li>
+                        <li><a href="mailto:placeholder@example.com">Contact Email</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn (TBD)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Governance</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">We believe in transparency. Our constitution, anti-hazing policy, and non-discrimination clauses are fully public.</p>
+                    <!-- PLACEHOLDER URL -->
+                    <a href="https://github.com/wisconsin-open-hardware/governance" class="mono" style="font-size: 0.85rem;">View Governance Documents ↗</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wisconsin Open Hardware. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

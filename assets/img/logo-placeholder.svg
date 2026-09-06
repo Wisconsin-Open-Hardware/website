@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Hexagon Frame -->
+  <polygon points="100,10 185,55 185,145 100,190 15,145 15,55" fill="none" stroke="#dc2626" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Inner Circuit Traces (Decorative) -->
+  <circle cx="100" cy="10" r="4" fill="#dc2626"/>
+  <circle cx="185" cy="55" r="4" fill="#dc2626"/>
+  <circle cx="15" cy="145" r="4" fill="#dc2626"/>
+  <!-- Slanted W/O and H -->
+  <g transform="skewX(-15)" fill="#f8fafc">
+    <text x="120" y="115" font-family="'Courier New', monospace" font-size="48" font-weight="bold" text-anchor="middle" letter-spacing="2">WOH</text>
+  </g>
+</svg>
